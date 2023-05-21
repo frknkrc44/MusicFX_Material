@@ -1,0 +1,209 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright (C) 2010-2011 The Android Open Source Project
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8
+9          http://www.apache.org/licenses/LICENSE-2.0
+10
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="org.fk.musicfx"
+19    android:versionCode="10400"
+20    android:versionName="1.4" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="31"
+23-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="32" />
+24-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml
+25
+26    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+26-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:20:5-22:47
+26-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:21:9-73
+27    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+27-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:23:5-24:67
+27-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:24:9-64
+28
+29    <permission
+29-->[androidx.core:core:1.9.0] /home/lana/.gradle/caches/transforms-3/2d36cdbeb90dfdfd402f076bef064238/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+30        android:name="org.fk.musicfx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.9.0] /home/lana/.gradle/caches/transforms-3/2d36cdbeb90dfdfd402f076bef064238/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.9.0] /home/lana/.gradle/caches/transforms-3/2d36cdbeb90dfdfd402f076bef064238/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="org.fk.musicfx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.9.0] /home/lana/.gradle/caches/transforms-3/2d36cdbeb90dfdfd402f076bef064238/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.9.0] /home/lana/.gradle/caches/transforms-3/2d36cdbeb90dfdfd402f076bef064238/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:26:5-94:19
+36        android:allowBackup="false"
+36-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:30:9-36
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.9.0] /home/lana/.gradle/caches/transforms-3/2d36cdbeb90dfdfd402f076bef064238/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+38        android:dataExtractionRules="@xml/data_extraction_rules"
+38-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:31:9-65
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:icon="@drawable/icon"
+41-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:27:9-38
+42        android:label="@string/app_name"
+42-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:28:9-41
+43        android:testOnly="true"
+44        android:theme="@android:style/Theme.Black.NoTitleBar" >
+44-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:29:9-62
+45        <activity
+45-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:32:9-45:20
+46            android:name="com.android.musicfx.ActivityMusic"
+46-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:34:13-61
+47            android:exported="true"
+47-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:35:13-36
+48            android:label="@string/eq_dialog_title"
+48-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:36:13-52
+49            android:theme="@style/Theme.MusicFX" >
+49-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:33:13-49
+50            <intent-filter>
+50-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:37:13-44:29
+51                <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" />
+51-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:38:17-39:94
+51-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:39:21-91
+52
+53                <category android:name="android.intent.category.DEFAULT" />
+53-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:40:17-41:70
+53-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:41:21-67
+54                <category android:name="android.intent.category.CATEGORY_CONTENT_MUSIC" />
+54-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:42:17-43:85
+54-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:43:21-82
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:46:9-49:49
+58            android:name="com.android.musicfx.ControlPanelPicker"
+58-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:47:13-66
+59            android:excludeFromRecents="true"
+59-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:49:13-46
+60            android:theme="@style/Theme.MusicFX.Dialog" />
+60-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:48:13-56
+61
+62        <receiver
+62-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:50:9-65:20
+63            android:name="com.android.musicfx.ControlPanelReceiver"
+63-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:51:13-68
+64            android:exported="true" >
+64-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:52:13-36
+65            <intent-filter>
+65-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:53:13-64:29
+66                <action android:name="android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION" />
+66-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:54:17-55:93
+66-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:55:21-90
+67                <action android:name="android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION" />
+67-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:56:17-57:94
+67-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:57:21-91
+68                <action android:name="AudioEffect.ACTION_SET_PARAM" />
+68-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:58:17-59:67
+68-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:59:21-64
+69                <action android:name="AudioEffect.ACTION_GET_PARAM" />
+69-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:60:17-61:67
+69-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:61:21-64
+70
+71                <category android:name="android.intent.category.DEFAULT" />
+71-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:40:17-41:70
+71-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:41:21-67
+72            </intent-filter>
+73        </receiver>
+74        <receiver
+74-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:67:9-82:20
+75            android:name="com.android.musicfx.Compatibility$Receiver"
+75-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:68:13-70
+76            android:exported="true" >
+76-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:69:13-36
+77            <intent-filter>
+77-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:70:13-73:29
+78                <action android:name="android.intent.action.PACKAGE_ADDED" />
+78-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:71:17-78
+78-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:71:25-75
+79
+80                <data android:scheme="package" />
+80-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:72:17-50
+80-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:72:23-47
+81            </intent-filter>
+82            <intent-filter>
+82-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:74:13-77:29
+83                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+83-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:75:17-81
+83-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:75:25-78
+84
+85                <data android:scheme="package" />
+85-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:72:17-50
+85-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:72:23-47
+86            </intent-filter>
+87            <intent-filter>
+87-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:78:13-81:29
+88                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+88-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:79:17-80
+88-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:79:25-77
+89
+90                <data android:scheme="package" />
+90-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:72:17-50
+90-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:72:23-47
+91            </intent-filter>
+92        </receiver>
+93
+94        <service
+94-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:83:9-102
+95            android:name="com.android.musicfx.Compatibility$Service"
+95-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:83:18-74
+96            android:exported="false" />
+96-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:83:75-99
+97
+98        <activity
+98-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:84:9-92:20
+99            android:name="com.android.musicfx.Compatibility$Redirector"
+99-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:85:13-72
+100            android:exported="true" >
+100-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:86:13-36
+101            <intent-filter android:priority="2147483647" >
+101-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:87:13-91:29
+101-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:88:17-46
+102                <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" />
+102-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:38:17-39:94
+102-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:39:21-91
+103
+104                <category android:name="android.intent.category.DEFAULT" />
+104-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:40:17-41:70
+104-->/home/lana/AndroidStudioProjects/MusicFX/app/src/main/AndroidManifest.xml:41:21-67
+105            </intent-filter>
+106        </activity>
+107
+108        <provider
+108-->[androidx.emoji2:emoji2:1.2.0] /home/lana/.gradle/caches/transforms-3/1aadcf4e0f237724308e0370743d8486/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+109            android:name="androidx.startup.InitializationProvider"
+109-->[androidx.emoji2:emoji2:1.2.0] /home/lana/.gradle/caches/transforms-3/1aadcf4e0f237724308e0370743d8486/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+110            android:authorities="org.fk.musicfx.androidx-startup"
+110-->[androidx.emoji2:emoji2:1.2.0] /home/lana/.gradle/caches/transforms-3/1aadcf4e0f237724308e0370743d8486/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+111            android:exported="false" >
+111-->[androidx.emoji2:emoji2:1.2.0] /home/lana/.gradle/caches/transforms-3/1aadcf4e0f237724308e0370743d8486/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+112            <meta-data
+112-->[androidx.emoji2:emoji2:1.2.0] /home/lana/.gradle/caches/transforms-3/1aadcf4e0f237724308e0370743d8486/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+113                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+113-->[androidx.emoji2:emoji2:1.2.0] /home/lana/.gradle/caches/transforms-3/1aadcf4e0f237724308e0370743d8486/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+114                android:value="androidx.startup" />
+114-->[androidx.emoji2:emoji2:1.2.0] /home/lana/.gradle/caches/transforms-3/1aadcf4e0f237724308e0370743d8486/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+115            <meta-data
+115-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/lana/.gradle/caches/transforms-3/f7d8f15274dd8b4fe8a5f106a508708e/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+116                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+116-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/lana/.gradle/caches/transforms-3/f7d8f15274dd8b4fe8a5f106a508708e/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+117                android:value="androidx.startup" />
+117-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/lana/.gradle/caches/transforms-3/f7d8f15274dd8b4fe8a5f106a508708e/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+118        </provider>
+119    </application>
+120
+121</manifest>

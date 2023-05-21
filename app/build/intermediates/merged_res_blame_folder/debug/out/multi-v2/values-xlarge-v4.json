@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.fk.musicfx.app-mergeDebugResources-26:/values-xlarge-v4/values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "/home/lana/AndroidStudioProjects/MusicFX/app/src/main/res/values-xlarge/dimens.xml",
+                    "from": {
+                        "startLines": "18,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "741,692",
+                        "endColumns": "49,48",
+                        "endOffsets": "786,736"
+                    },
+                    "to": {
+                        "startLines": "8,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "473,523",
+                        "endColumns": "49,48",
+                        "endOffsets": "518,567"
+                    }
+                },
+                {
+                    "source": "/home/lana/.gradle/caches/transforms-3/e823a5dda738fb7207ec40a9ecdd8129/transformed/appcompat-1.6.1/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    }
+                }
+            ]
+        }
+    ]
+}

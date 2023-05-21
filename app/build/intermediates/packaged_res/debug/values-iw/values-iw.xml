@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="2227320688818248940" name="app_name">"MusicFX"</string>
+    <string msgid="8643071340166812205" name="bass_boost_strength">"הגברת הבס"</string>
+    <string msgid="67259122484788490" name="ci_extreme">"FX Booster"</string>
+    <string msgid="1975693421508209132" name="classical">"קלאסית"</string>
+    <string msgid="212617702657103572" name="dance">"דאנס"</string>
+    <string msgid="3237402214371962070" name="eq_dialog_title">"אקוולייזר"</string>
+    <string msgid="2844441946717126606" name="flat">"מונוטוני"</string>
+    <string msgid="5648693824262941979" name="folk">"פולק"</string>
+    <string msgid="1774198554148807517" name="headset_plug">"צריך לחבר אוזניות כדי לשמוע את האפקטים האלה."</string>
+    <string msgid="3885222304402494034" name="heavy_metal">"הבי מטאל"</string>
+    <string msgid="4147534012796302488" name="hip_hop">"היפ הופ"</string>
+    <string msgid="556328727821095055" name="jazz">"ג\'אז"</string>
+    <string msgid="9023408561505030260" name="no_effects">"האפקטים לא זמינים."</string>
+    <string msgid="757786146857325609" name="normal">"רגיל"</string>
+    <string msgid="4756201760847390691" name="picker_title">"חלונית בקרה – אפקטים מוזיקליים"</string>
+    <string msgid="8568493898002509539" name="pop">"פופ"</string>
+    <string msgid="4226553710464965901" name="rock">"רוק"</string>
+    <string msgid="4811197673396615722" name="setup">"הגדרה"</string>
+    <string msgid="8392147515328861077" name="user">"משתמש"</string>
+    <string msgid="2139410708760989842" name="virtualizer_strength">"צליל סראונד"</string>
+</resources>

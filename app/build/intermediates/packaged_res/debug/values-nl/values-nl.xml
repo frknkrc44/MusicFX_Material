@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="2227320688818248940" name="app_name">"MusicFX"</string>
+    <string msgid="8643071340166812205" name="bass_boost_strength">"Basversterking"</string>
+    <string msgid="67259122484788490" name="ci_extreme">"FX-booster"</string>
+    <string msgid="1975693421508209132" name="classical">"Klassiek"</string>
+    <string msgid="212617702657103572" name="dance">"Dance"</string>
+    <string msgid="3237402214371962070" name="eq_dialog_title">"Equalizer"</string>
+    <string msgid="2844441946717126606" name="flat">"Vlak"</string>
+    <string msgid="5648693824262941979" name="folk">"Folk"</string>
+    <string msgid="1774198554148807517" name="headset_plug">"Gebruik een hoofdtelefoon om deze effecten te beluisteren."</string>
+    <string msgid="3885222304402494034" name="heavy_metal">"Heavy metal"</string>
+    <string msgid="4147534012796302488" name="hip_hop">"Hiphop"</string>
+    <string msgid="556328727821095055" name="jazz">"Jazz"</string>
+    <string msgid="9023408561505030260" name="no_effects">"Effecten niet beschikbaar."</string>
+    <string msgid="757786146857325609" name="normal">"Normaal"</string>
+    <string msgid="4756201760847390691" name="picker_title">"Dashboard voor muziekeffecten"</string>
+    <string msgid="8568493898002509539" name="pop">"Pop"</string>
+    <string msgid="4226553710464965901" name="rock">"Rock"</string>
+    <string msgid="4811197673396615722" name="setup">"Instellen"</string>
+    <string msgid="8392147515328861077" name="user">"Gebruiker"</string>
+    <string msgid="2139410708760989842" name="virtualizer_strength">"Surround sound"</string>
+</resources>

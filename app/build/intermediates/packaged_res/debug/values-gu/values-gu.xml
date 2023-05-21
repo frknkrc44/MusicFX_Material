@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="2227320688818248940" name="app_name">"MusicFX"</string>
+    <string msgid="8643071340166812205" name="bass_boost_strength">"બાસ બૂસ્ટ"</string>
+    <string msgid="67259122484788490" name="ci_extreme">"FX બૂસ્ટર"</string>
+    <string msgid="1975693421508209132" name="classical">"ક્લાસિકલ"</string>
+    <string msgid="212617702657103572" name="dance">"ડાન્સ"</string>
+    <string msgid="3237402214371962070" name="eq_dialog_title">"ઇક્વલાઇઝર"</string>
+    <string msgid="2844441946717126606" name="flat">"એકસમાન સૂર"</string>
+    <string msgid="5648693824262941979" name="folk">"લોકગીતો"</string>
+    <string msgid="1774198554148807517" name="headset_plug">"આ ઇફેક્ટ માટે હૅડફોન પ્લગ ઇન કરો."</string>
+    <string msgid="3885222304402494034" name="heavy_metal">"હૅવી મેટલ"</string>
+    <string msgid="4147534012796302488" name="hip_hop">"હિપ હૉપ"</string>
+    <string msgid="556328727821095055" name="jazz">"જાઝ"</string>
+    <string msgid="9023408561505030260" name="no_effects">"ઇફેક્ટ ઉપલબ્ધ નથી."</string>
+    <string msgid="757786146857325609" name="normal">"સામાન્ય"</string>
+    <string msgid="4756201760847390691" name="picker_title">"મ્યુઝિક ઇફેક્ટની કન્ટ્રોલ પૅનલ"</string>
+    <string msgid="8568493898002509539" name="pop">"પૉપ"</string>
+    <string msgid="4226553710464965901" name="rock">"રૉક"</string>
+    <string msgid="4811197673396615722" name="setup">"સેટઅપ"</string>
+    <string msgid="8392147515328861077" name="user">"વપરાશકર્તા"</string>
+    <string msgid="2139410708760989842" name="virtualizer_strength">"સરાઉન્ડ સાઉન્ડ"</string>
+</resources>

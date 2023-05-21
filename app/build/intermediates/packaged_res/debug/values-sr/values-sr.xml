@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="2227320688818248940" name="app_name">"MusicFX"</string>
+    <string msgid="8643071340166812205" name="bass_boost_strength">"Појачавање басова"</string>
+    <string msgid="67259122484788490" name="ci_extreme">"FX бустер"</string>
+    <string msgid="1975693421508209132" name="classical">"Класична"</string>
+    <string msgid="212617702657103572" name="dance">"Денс"</string>
+    <string msgid="3237402214371962070" name="eq_dialog_title">"Еквилајзер"</string>
+    <string msgid="2844441946717126606" name="flat">"Уједначено"</string>
+    <string msgid="5648693824262941979" name="folk">"Фолк"</string>
+    <string msgid="1774198554148807517" name="headset_plug">"Прикључите слушалице за ове ефекте."</string>
+    <string msgid="3885222304402494034" name="heavy_metal">"Хеви метал"</string>
+    <string msgid="4147534012796302488" name="hip_hop">"Хип-хоп"</string>
+    <string msgid="556328727821095055" name="jazz">"Џез"</string>
+    <string msgid="9023408561505030260" name="no_effects">"Ефекти нису доступни."</string>
+    <string msgid="757786146857325609" name="normal">"Нормално"</string>
+    <string msgid="4756201760847390691" name="picker_title">"Контр. табла музичких ефеката"</string>
+    <string msgid="8568493898002509539" name="pop">"Поп"</string>
+    <string msgid="4226553710464965901" name="rock">"Рок"</string>
+    <string msgid="4811197673396615722" name="setup">"Подешавање"</string>
+    <string msgid="8392147515328861077" name="user">"Корисник"</string>
+    <string msgid="2139410708760989842" name="virtualizer_strength">"Просторни звук"</string>
+</resources>
