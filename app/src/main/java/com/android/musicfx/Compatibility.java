@@ -17,21 +17,9 @@
 package com.android.musicfx;
 
 import android.app.Activity;
-import android.app.IntentService;
-import android.content.BroadcastReceiver;
 import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.media.audiofx.AudioEffect;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
-
-import java.util.List;
 
 public class Compatibility {
     private final static String TAG = "MusicFXCompat";

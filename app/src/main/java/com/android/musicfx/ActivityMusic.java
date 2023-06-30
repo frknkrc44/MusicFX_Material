@@ -17,7 +17,6 @@
 package com.android.musicfx;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioDeviceCallback;
@@ -33,13 +32,10 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Spinner;
@@ -47,20 +43,15 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SwitchCompat;
 
 import com.android.audiofx.OpenSLESConstants;
 import com.android.settingslib.widget.MainSwitchBar;
-import com.google.android.material.materialswitch.MaterialSwitch;
-import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 import com.google.android.material.textfield.TextInputLayout;
 
 import org.fk.musicfx.R;
 
-import java.lang.reflect.Method;
 import java.util.Formatter;
 import java.util.HashSet;
 import java.util.Locale;
@@ -253,17 +244,7 @@ public class ActivityMusic extends AppCompatActivity implements OnSeekBarChangeL
 
     private boolean isHeadSetDeviceConnected() {
         final AudioManager audioManager = getSystemService(AudioManager.class);
-        AudioDeviceInfo[] deviceInfos;
-
-        try {
-            // audioManager.getDevicesStatic(AudioManager.GET_DEVICES_OUTPUTS);
-            @SuppressLint("SoonBlockedPrivateApi")
-            Method method = AudioManager.class.getDeclaredMethod("getDevicesStatic", int.class);
-            method.setAccessible(true);
-            deviceInfos = (AudioDeviceInfo[]) method.invoke(audioManager, AudioManager.GET_DEVICES_OUTPUTS);
-        } catch (Throwable ignored) {
-            deviceInfos = audioManager.getDevices(AudioManager.GET_DEVICES_OUTPUTS);
-        }
+        AudioDeviceInfo[] deviceInfos = audioManager.getDevices(AudioManager.GET_DEVICES_OUTPUTS);
 
         if (deviceInfos == null) {
             return false;

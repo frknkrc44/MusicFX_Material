@@ -8,7 +8,7 @@ android {
     defaultConfig {
         applicationId "org.fk.musicfx"
         minSdkVersion 31
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 10400
         versionName "1.4"
     }
