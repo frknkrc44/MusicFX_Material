@@ -11,7 +11,7 @@
     <style name="Base.Theme.MusicFX" parent="Theme.Material3.Dark.NoActionBar">
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowSharedElementsUseOverlay">false</item>
-        <item name="android:windowBackground">@android:color/system_accent2_900</item>
+        <item name="android:windowBackground">@android:color/system_neutral2_900</item>
         <item name="colorPrimary">@android:color/system_accent1_200</item>
         <item name="colorOnPrimary">@android:color/system_accent1_800</item>
         <item name="colorPrimaryContainer">@android:color/system_accent1_700</item>
