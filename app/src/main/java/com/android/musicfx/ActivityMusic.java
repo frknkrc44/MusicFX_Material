@@ -317,7 +317,8 @@ public class ActivityMusic extends AppCompatActivity implements OnSeekBarChangeL
 
             if (effect.type.equals(AudioEffect.EFFECT_TYPE_VIRTUALIZER)) {
                 mVirtualizerSupported = true;
-                mVirtualizerIsHeadphoneOnly = !isVirtualizerTransauralSupported();
+                // mVirtualizerIsHeadphoneOnly = !isVirtualizerTransauralSupported();
+                mVirtualizerIsHeadphoneOnly = false;
             } else if (effect.type.equals(AudioEffect.EFFECT_TYPE_BASS_BOOST)) {
                 mBassBoostSupported = true;
             } else if (effect.type.equals(AudioEffect.EFFECT_TYPE_EQUALIZER)) {
@@ -692,14 +693,15 @@ public class ActivityMusic extends AppCompatActivity implements OnSeekBarChangeL
                 findViewById(R.id.vILayout).setEnabled(!isVirtualizerOn);
             }
             if (mBassBoostSupported) {
+                final boolean isBassBoostOn = mIsHeadsetOn || !mVirtualizerIsHeadphoneOnly;
                 ControlPanelEffect.setParameterBoolean(
                         mContext,
                         mCallingPackageName,
                         ControlPanelEffect.Key.bb_enabled,
-                        mIsHeadsetOn);
-                ((TextView) findViewById(R.id.bBStrengthText)).setEnabled(mIsHeadsetOn);
-                ((SeekBar) findViewById(R.id.bBStrengthSeekBar)).setEnabled(mIsHeadsetOn);
-                findViewById(R.id.bBLayout).setEnabled(!mIsHeadsetOn);
+                        isBassBoostOn);
+                ((TextView) findViewById(R.id.bBStrengthText)).setEnabled(isBassBoostOn);
+                ((SeekBar) findViewById(R.id.bBStrengthSeekBar)).setEnabled(isBassBoostOn);
+                findViewById(R.id.bBLayout).setEnabled(!isBassBoostOn);
             }
         }
     }
@@ -885,7 +887,6 @@ public class ActivityMusic extends AppCompatActivity implements OnSeekBarChangeL
         toast.show();
     }
 
-    @SuppressLint({"SoonBlockedPrivateApi", "PrivateApi"})
     private static boolean isVirtualizerTransauralSupported() {
         Virtualizer virt = null;
         boolean transauralSupported = false;
