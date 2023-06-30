@@ -52,6 +52,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
 import com.android.audiofx.OpenSLESConstants;
+import com.android.settingslib.widget.MainSwitchBar;
 import com.google.android.material.materialswitch.MaterialSwitch;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
@@ -119,7 +120,8 @@ public class ActivityMusic extends AppCompatActivity implements OnSeekBarChangeL
     private int mPRPresetPrevious;
 
     private boolean mIsHeadsetOn = false;
-    private MaterialSwitch mToggleSwitch;
+    // private MaterialSwitch mToggleSwitch;
+    private MainSwitchBar mToggleSwitch;
 
     private StringBuilder mFormatBuilder = new StringBuilder();
     private Formatter mFormatter = new Formatter(mFormatBuilder, Locale.getDefault());
@@ -374,8 +376,9 @@ public class ActivityMusic extends AppCompatActivity implements OnSeekBarChangeL
             // Set the listener for the main enhancements toggle button.
             // Depending on the state enable the supported effects if they were
             // checked in the setup tab.
-            mToggleSwitch = findViewById(R.id.enable_disable_switch);
-            mToggleSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            mToggleSwitch = findViewById(R.id.settingslib_main_switch_bar);
+            mToggleSwitch.setTitle(getString(R.string.eq_dialog_title));
+            mToggleSwitch.addOnSwitchChangeListener((buttonView, isChecked) -> {
 
                 // set parameter and state
                 ControlPanelEffect.setParameterBoolean(mContext, mCallingPackageName,
@@ -590,6 +593,9 @@ public class ActivityMusic extends AppCompatActivity implements OnSeekBarChangeL
     private void equalizerTILInit() {
         TextInputLayout textInputLayout = findViewById(R.id.preset_selector);
         MaterialAutoCompleteTextView textView = ((MaterialAutoCompleteTextView) textInputLayout.getEditText());
+        if (textView == null) {
+            return;
+        }
         textView.setSimpleItems(mEQPresetNames);
         textView.setOnItemClickListener((parent, view, position, id) -> {
             if (position != mEQPresetPrevious) {

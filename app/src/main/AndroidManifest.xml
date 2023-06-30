@@ -43,10 +43,6 @@
                     android:name="android.intent.category.CATEGORY_CONTENT_MUSIC" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.android.musicfx.ControlPanelPicker"
-            android:theme="@style/Theme.MusicFX.Dialog"
-            android:excludeFromRecents="true" />
         <receiver
             android:name="com.android.musicfx.ControlPanelReceiver"
             android:exported="true">

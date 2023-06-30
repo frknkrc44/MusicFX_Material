@@ -18,4 +18,20 @@
     <dimen name="eq_slider_margin">5dip</dimen>
     <dimen name="eq_slider_height">180dip</dimen>
     <dimen name="action_bar_switch_padding">16dip</dimen>
+
+    <!-- Restricted icon size in switch bar -->
+    <dimen name="settingslib_restricted_icon_size">@android:dimen/config_restrictedIconSize</dimen>
+
+    <!-- Restricted icon in switch bar -->
+    <dimen name="settingslib_restricted_icon_margin_end">16dp</dimen>
+
+    <!-- Size of title margin -->
+    <dimen name="settingslib_switch_title_margin">24dp</dimen>
+
+    <!-- SwitchBar sub settings margin start / end -->
+    <dimen name="settingslib_switchbar_subsettings_margin_start">72dp</dimen>
+    <dimen name="settingslib_switchbar_subsettings_margin_end">16dp</dimen>
+
+    <dimen name="settingslib_preferred_minimum_touch_target">48dp</dimen>
+
 </resources>
